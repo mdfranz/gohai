@@ -122,7 +122,9 @@ func computeCoresAndProcessors() (phys int, cores int, processors int, err error
 	return
 }
 
-func getCpuInfo() (cpuInfo map[string]string, err error) {
+// GetCpuInfo() returns a map of various CPU information from the
+// registry
+func GetCpuInfo() (cpuInfo map[string]string, err error) {
 
 	cpuInfo = make(map[string]string)
 
